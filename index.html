@@ -151,6 +151,24 @@
       font-size:14px;
       margin:0 0 18px;
     }
+    .badge{
+      display:inline-block;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      background:rgba(74,159,237,.12);
+      border:1px solid rgba(74,159,237,.3);
+      padding:4px 10px;
+      border-radius:999px;
+      margin-bottom:14px;
+    }
+    .badge.intense{
+      color:var(--orange);
+      background:rgba(247,147,26,.12);
+      border-color:rgba(247,147,26,.35);
+    }
     .card ul{
       list-style:none;
       padding:0;
@@ -253,6 +271,7 @@
       <img src="bitcoin4kids.png" alt="Bitcoin 4 kids" class="logo" />
       <nav>
         <a href="#programas">Programas</a>
+        <a href="#avanzados">Avanzados</a>
         <a href="#por-que">Por qué</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -271,7 +290,7 @@
     </section>
 
     <section id="programas">
-      <h2>Dos programas, una misma idea</h2>
+      <h2>Talleres de iniciación</h2>
       <p class="section-sub">Contenidos adaptados y personalizados a cada edad. Elige el tuyo.</p>
 
       <div class="programs">
@@ -293,6 +312,39 @@
             <li>Cómo resuelve los problemas del dinero</li>
             <li>Quién decide cuánto dinero hay</li>
             <li>Por qué surgen alternativas para ahorrar</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="avanzados">
+      <h2>Talleres avanzados</h2>
+      <p class="section-sub">Para quien ya tiene la base y quiere entender qué hay debajo del capó.</p>
+
+      <div class="programs">
+        <article class="card">
+          <span class="badge">Avanzado</span>
+          <h3>Bitcoin <span class="name-blue">4</span> <span class="name-orange">kids</span></h3>
+          <p class="meta">9–15 años · Ritmo adaptado · Presencial</p>
+          <ul>
+            <li>Blockchain: cómo se encadenan los bloques</li>
+            <li>Nodos: quién valida la red</li>
+            <li>Minería: qué hacen los mineros y por qué</li>
+            <li>Pagos en Bitcoin</li>
+            <li>Pagos rápidos en Lightning Network</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="badge intense">Avanzado · Intensivo</span>
+          <h3>Bitcoin <span class="name-blue">4</span> <span class="name-orange">all</span></h3>
+          <p class="meta">+16 años · Formato intensivo · Presencial</p>
+          <ul>
+            <li>Blockchain en profundidad: estructura y validación</li>
+            <li>Nodos: tipos, consenso y descentralización</li>
+            <li>Minería: prueba de trabajo, dificultad y halving</li>
+            <li>Pagos en Bitcoin: UTXOs, comisiones y mempool</li>
+            <li>Lightning Network: canales, enrutado y casos reales</li>
           </ul>
         </article>
       </div>
